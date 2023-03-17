@@ -67,6 +67,7 @@ public class GameMgr : MonoBehaviour
     public void ReTry()
     {
         Debug.Log("¿ÁΩ√¿€");
+        mapGererator.MapDestroy(curLv);
     }
 
 }
