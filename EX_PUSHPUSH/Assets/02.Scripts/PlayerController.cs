@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        gameMgr = GameObject.Find("GameMgr").GetComponent<GameMgr>();
+        //gameMgr = GameObject.Find("GameMgr").GetComponent<GameMgr>();
     }
 
 

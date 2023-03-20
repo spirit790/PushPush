@@ -9,6 +9,7 @@ TagManager:
   - Buket
   - Ball
   - Bucket
+  - Enemy
   layers:
   - Default
   - TransparentFX
