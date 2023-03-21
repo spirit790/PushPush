@@ -7,27 +7,27 @@ public class Destroyer : MonoBehaviour
 {
     public Text score;
     public int Cnt;
-
+    public Jun_TweenRuntime tween;
 
     public void Start()
     {
-        score = GameObject.Find("ScoreTxt").GetComponent<Text>();
     }
     public void Update()
     {
-        ScoreCnt();
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy")
         {
             Cnt++;
-            Destroy(other.gameObject);
+            Destroy(collision.gameObject);
+            ScoreCnt();
+            tween.Play();
         }
     }
 
     public void ScoreCnt()
     {
-        score.text = $"Score : " + Cnt;
+        score.text = $" " + Cnt;
     }
 }

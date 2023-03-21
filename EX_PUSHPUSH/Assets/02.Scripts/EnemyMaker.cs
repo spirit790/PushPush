@@ -12,7 +12,8 @@ public class EnemyMaker : MonoBehaviour
 
     private void Start()
     {
-        coolTime = Random.Range(1.5f, 3.0f);
+        coolTime = Random.Range(1f, 2.0f);
+        isRunning = true;
     }
     void Update()
     {
